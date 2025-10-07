@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
+    "homepage": "https://ajaykumarsoni.github.io/Multimodel",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import HomeDashboard from './pages/HomeDashboard'
 import Upload from './pages/Upload'
