@@ -8,8 +8,6 @@
     "homepage": "https://ajaykumarsoni.github.io/Multimodel",
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "node scripts/copy404.cjs",
-    "deploy": "npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

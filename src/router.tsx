@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import HomeDashboard from './pages/HomeDashboard'
 import Upload from './pages/Upload'
@@ -24,6 +24,6 @@ const router = createBrowserRouter([
       { path: '*', element: <NotFound /> },
     ],
   },
-], { basename: import.meta.env.BASE_URL })
+])
 
 export default router

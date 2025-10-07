@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import {
   Box,
@@ -58,7 +58,17 @@ export default function Upload() {
     }
   }, [])
 
-  // removed unused rootStyles
+  const rootStyles = useMemo(
+    () => ({
+      border: '2px dashed',
+      borderColor: 'divider',
+      borderRadius: 2,
+      p: 6,
+      textAlign: 'center',
+      bgcolor: isDragActive ? 'action.hover' : 'transparent',
+    }),
+    [isDragActive],
+  )
 
   return (
     <Stack spacing={3}>
